@@ -4,7 +4,7 @@ const random = (arr) => {
 const getTime = () => {
     // Get current hour
     const now = new Date().getHours();
-    if (now >= 16) return "evening";
+    if (now >= 21) return "evening";
     // If right now is equals to or greater than 15 (3pm), turn on darkmode
     if (now >= 15) return "afternoon";
     // If right now is equals to or greater than 11 (11am), turn on darkmode
