@@ -12,7 +12,7 @@ const getTime = () => {
     // If right now is equals to or greater than 5 (5am), turn on daymode
     if (now >= 5) return "morning";
     // If right now is equals to or greater than 0 (12am), turn on darkmode
-    if (now >= 1) return "night";
+    if (now >= 0) return "night";
 }
 const generateTypeIt = (el, speed, cursor, arr) => {
     const typeit = new TypeIt(el, { speed, cursor, lifeLike: true });
